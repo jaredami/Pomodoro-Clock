@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>FCC Pomodoro Clock</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Orbitron|Roboto|Lobster" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="pomodoro-style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div id="topSpace" class="row"></div>
+    <img id="fcc" src="https://design-style-guide.freecodecamp.org/downloads/freeCodeCamp.jpg">
+    <h2 id="pomodoroTitle">Pomodoro Clock</h2>
+    <div id="clockBox">
+      
+      <div class="row">
+          <h1 id="clock">00:00</h1>
+      </div>
+      
+      <div id="buttonRow" class="row">
+        <div id="buttonsContainer">
+          <button id="startButton" class="buttons">
+            <i class="fa fa-play" aria-hidden="true"></i>
+          </button>
+          <button id="pauseButton" class="buttons">
+            <i class="fa fa-pause" aria-hidden="true"></i>
+          </button>
+          <button id="resetButton" class="buttons">
+            <i class="fa fa-refresh" aria-hidden="true"></i> 
+          </button>
+        </div>
+      </div>
+      
+      <div id="sessionBreakContainer" class="row">
+        <div id="pomChangeContainer" class-"col-6">
+          <button id="pomPlus" class="addMinusButtons">
+            <i class="fa fa-plus-square" aria-hidden="true"></i>
+          </button>
+          <p id="pomLength">25</p>
+          <button id="pomMinus" class="addMinusButtons">
+            <i class="fa fa-minus-square" aria-hidden="true"></i>
+          </button>
+        </div>
+        
+        <div id="breakChangeContainer" class-"col-6">
+          <button id="breakPlus" class="addMinusButtons">
+            <i class="fa fa-plus-square" aria-hidden="true"></i>
+          </button>
+          <p id="breakLength">10</p>
+          <button id="breakMinus" class="addMinusButtons">
+            <i class="fa fa-minus-square" aria-hidden="true"></i>
+          </button>
+          </div>
+      </div>
+      
+      <div class=row>
+        <p id="session" class="label col-6">Session</p>
+        <p id="break" class="label col-6">Break</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="pomodoro-script.js"></script>
+</body>
+
+</html>
